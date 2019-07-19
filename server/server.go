@@ -45,7 +45,7 @@ func (server Server) ginStart() {
 	gin.SetMode(gin.ReleaseMode)
 	r := gin.Default()
 
-	r.GET("/api/actionA", func(c *gin.Context) {
+	r.POST("/api/actionA", func(c *gin.Context) {
 		doA(server.s, c)
 	})
 
