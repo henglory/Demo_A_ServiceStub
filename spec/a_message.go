@@ -1,8 +1,8 @@
 package spec
 
 type AReq struct {
-	First  int `json:"first"`
-	Second int `json:"second"`
+	X int `json:"x"`
+	Y int `json:"y"`
 }
 
 type ARes struct {

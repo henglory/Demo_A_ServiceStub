@@ -6,11 +6,11 @@ import (
 
 func DoA(s interface {
 }, req spec.AReq) (res spec.ARes) {
-	if req.First > 1000 || req.Second > 1000 {
+	if req.X > 1000 || req.Y > 1000 {
 		res.StatusCode = "01"
 		return
 	}
-	res.Result = req.First + req.Second
+	res.Result = req.X + req.Y
 	res.StatusCode = "00"
 	return
 }
