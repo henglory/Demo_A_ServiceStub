@@ -1,4 +1,4 @@
-module github.com/henglory/Demo_A_ServiceStub
+module github.com/henglory/Demo_ServiceStubby
 
 go 1.12.6
 
