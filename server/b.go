@@ -23,6 +23,7 @@ func doB(s service.Service, c *gin.Context) {
 			StatusCode: "99",
 		})
 	}
+	//
 	res := handler.DoB(s, data)
 	c.JSON(200, res)
 }
