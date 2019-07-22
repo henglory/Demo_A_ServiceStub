@@ -1,2 +1,2 @@
 
-web: Demo_A_ServiceStub
+web: Demo_ServiceStubby
