@@ -49,6 +49,10 @@ func (server Server) ginStart() {
 		doA(server.s, c)
 	})
 
+	r.POST("/api/actionB", func(c *gin.Context) {
+		doB(server.s, c)
+	})
+
 	server.srv = &http.Server{
 		Addr:    config.ServicePort,
 		Handler: r,
