@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"github.com/henglory/Demo_A_ServiceStub/spec"
+	"github.com/henglory/Demo_ServiceStubby/spec"
 )
 
 func DoA(s interface {

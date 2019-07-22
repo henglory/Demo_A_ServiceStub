@@ -9,20 +9,20 @@ import (
 	"github.com/henglory/Demo_ServiceStubby/spec"
 )
 
-func doA(s service.Service, c *gin.Context) {
-	var data spec.AReq
+func doB(s service.Service, c *gin.Context) {
+	var data spec.BReq
 	raw, err := c.GetRawData()
 	if err != nil {
-		c.JSON(500, spec.ARes{
+		c.JSON(500, spec.BRes{
 			StatusCode: "99",
 		})
 	}
 	err = json.Unmarshal(raw, &data)
 	if err != nil {
-		c.JSON(500, spec.ARes{
+		c.JSON(500, spec.BRes{
 			StatusCode: "99",
 		})
 	}
-	res := handler.DoA(s, data)
+	res := handler.DoB(s, data)
 	c.JSON(200, res)
 }

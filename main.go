@@ -5,8 +5,8 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/henglory/Demo_A_ServiceStub/server"
-	"github.com/henglory/Demo_A_ServiceStub/service"
+	"github.com/henglory/Demo_ServiceStubby/server"
+	"github.com/henglory/Demo_ServiceStubby/service"
 )
 
 func main() {

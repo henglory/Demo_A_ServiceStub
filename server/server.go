@@ -7,8 +7,8 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/henglory/Demo_A_ServiceStub/config"
-	"github.com/henglory/Demo_A_ServiceStub/service"
+	"github.com/henglory/Demo_ServiceStubby/config"
+	"github.com/henglory/Demo_ServiceStubby/service"
 )
 
 type errorResponse struct {
